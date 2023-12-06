@@ -227,6 +227,15 @@ module.exports = {
         min: 640, // min resized image's size. if original is lower, use that size.
         steps: 2, // the max number of images generated between min and max (inclusive)
       },
+      "@docusaurus/plugin-client-redirects", {
+        // redirects: "./redirects.js"
+        redirects: [
+          {
+            to: '/docs/newDoc',
+            from: '/docs/oldDoc',
+          }
+        ]
+      }
     ],
   ],
   presets: [
